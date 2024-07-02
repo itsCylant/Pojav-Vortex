@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App name part -->
-    <string name="app_name">PojavLauncher (Minecraft: Java Edition for Android)</string>
-    <string name="app_short_name">PojavLauncher</string>
+    <string name="app_name">Pojav-Vortex</string>
+    <string name="app_short_name">Pojav-Vortex</string>
 
     <!-- Action bar part -->
 
@@ -22,7 +22,7 @@
     <string name="alerttitle_installmod">Select a mod installer</string>
 
     <!-- Error messages -->
-    <string name="error_fatal">PojavLauncher has unexpectedly crashed</string>
+    <string name="error_fatal">Pojav-Vortex has unexpectedly crashed</string>
     <string name="error_no_version">No version!</string>
     <string name="error_show_more">Show more</string>
     <string name="error_show_less">Show less</string>
@@ -46,21 +46,21 @@
     <string name="mcl_launch_download_assets">Preparing to download resources</string>
 
     <string name="mcl_options">Options</string>
-    <string name="mcl_option_customcontrol">Custom controls</string>
+    <string name="mcl_option_customcontrol">Customize Controls</string>
 
 
     <string name="mcl_setting_title_use_surface_view">Use alternate surface rendering</string>
     <string name="mcl_setting_subtitle_use_surface_view">May help performance in GPU bound scenarios.</string>
     <string name="mcl_setting_title_ignore_notch">Ignore notch</string>
     <string name="mcl_setting_subtitle_ignore_notch">Ignores the notch and extends the screen under it.\nGives you a more immersive experience.</string>
-    <string name="mcl_setting_title_resolution_scaler">Resolution Scaler</string>
+    <string name="mcl_setting_title_resolution_scaler">Resolution Scale</string>
     <string name="mcl_setting_subtitle_resolution_scaler">Allows you to decrease the game resolution. 100% is full resolution.</string>
     <string name="mcl_setting_title_longpresstrigger">Trigger long press delay</string>
     <string name="mcl_setting_subtitle_longpresstrigger">Change long press trigger delay for destroying blocks and dropping items.</string>
     <string name="mcl_setting_title_buttonscale">Control buttons scaling</string>
     <string name="mcl_setting_subtitle_buttonscale">Upscale them if the buttons are too small.</string>
-    <string name="mcl_setting_title_mousescale">Mouse scaling</string>
-    <string name="mcl_setting_subtitle_mousescale">Change the size of the virtual mouse.</string>
+    <string name="mcl_setting_title_mousescale">Cursor Scaling</string>
+    <string name="mcl_setting_subtitle_mousescale">Change the size of the cursor.</string>
     <string name="mcl_setting_title_javaargs">JVM Launch arguments</string>
     <string name="mcl_setting_subtitle_javaargs">Be careful, this may make game crash if modified without knowledge.</string>
     <string name="mcl_setting_category_renderer">Renderer</string>
@@ -110,9 +110,9 @@
     <string name="control_jump">⬛</string>
     <string name="control_thirdperson">3rd</string>
     <string name="control_listplayers">Tab</string>
-    <string name="control_mouse">Mouse</string>
-    <string name="control_mouseoff">Mouse: off</string>
-    <string name="control_mouseon">Mouse: on </string>
+    <string name="control_mouse">Cursor</string>
+    <string name="control_mouseoff">Cursor: OFF</string>
+    <string name="control_mouseon">Cursor: ON </string>
 
     <!-- MainActivity: Menu advanced controls -->
     <string name="control_forceclose">Force close</string>
@@ -152,8 +152,8 @@
     <string name="customctrl_selectdefault">Select default controlmap</string>
     <string name="customctrl_export">Export controlmap</string>
 
-    <string name="main_share_logs">Share log file</string>
-    <string name="main_install_jar_file">Execute a .jar</string>
+    <string name="main_share_logs">Share log File</string>
+    <string name="main_install_jar_file">Run A .jar File</string>
     <string name="main_play">Play</string>
     <string name="autoram_info_msg">Memory set to %d MB</string>
     <string name="mcl_setting_check_libraries">Check libraries after downloading</string>
@@ -165,9 +165,9 @@
     <string name="mcl_disable_gestures_subtitle">Disables gestures, such as hold to break block, and tap to place a block.</string>
     <string name="mcl_disable_swap_hand">Disable double tap to swap hands</string>
     <string name="mcl_disable_swap_hand_subtitle">Disables double tapping on the hotbar item to swap it in the second hand.</string>
-    <string name="mcl_setting_title_mousespeed">Mouse Speed</string>
-    <string name="mcl_setting_subtitle_mousespeed">Changes the speed of the virtual mouse.</string>
-    <string name="customctrl_passthru">Mouse pass-thru</string>
+    <string name="mcl_setting_title_mousespeed">Cursor Speed</string>
+    <string name="mcl_setting_subtitle_mousespeed">Changes the speed of the cursor.</string>
+    <string name="customctrl_passthru">Cursor Pass-Through</string>
     <string name="customctrl_swipeable">Swipeable</string>
     <string name="customctrl_forward_lock">Forward lock</string>
     <string name="customctrl_absolute_tracking">Absolute finger tracking</string>
@@ -184,35 +184,35 @@
     <string name="multirt_config_setdefault">Set default</string>
     <string name="multirt_config_setdefault_already">Default</string>
     <string name="multirt_config_removeerror_last">You must have at least one Java Runtime installed.</string>
-    <string name="multirt_nocompatiblert">Can\'t find any compartible Java Runtime. This version requires Java %d or newer.</string>
+    <string name="multirt_nocompatiblert">Can\'t find any compatible Java Runtime. This version requires Java %d or newer.</string>
     <string name="multirt_nojava8rt">Can\'t find Java 8. In order to use this option, you need to install Java 8.</string>
     <string name="multirt_delete_runtime">Delete runtime</string>
     <string name="pvc_gameDirectory">Game directory</string>
     <string name="pvc_jvmArgs">JVM arguments</string>
 
-    <string name="preference_mouse_start_title">Start with virtual mouse on</string>
-    <string name="preference_mouse_start_description">The virtual mouse appears at startup when this option is on.</string>
-    <string name="preference_video_title">Video and renderer</string>
-    <string name="preference_video_description">Resolution, renderer and performance</string>
-    <string name="preference_control_title">Control customization</string>
-    <string name="preference_control_description">Gestures, buttons and scaling</string>
+    <string name="preference_mouse_start_title">Start with Cursor</string>
+    <string name="preference_mouse_start_description">The cursor appears at startup when this option is on.</string>
+    <string name="preference_video_title">Video &amp; Renderer</string>
+    <string name="preference_video_description">Resolution, Renderer &amp; Performance</string>
+    <string name="preference_control_title">Control Customization</string>
+    <string name="preference_control_description">Gestures, Buttons &amp; Scaling</string>
     <string name="preference_java_title">Java Tweaks</string>
-    <string name="preference_java_description">Java Runtimes, JVM Arguments, RAM amount and sandbox</string>
-    <string name="preference_misc_title">Miscellaneous settings</string>
-    <string name="preference_misc_description">Version list and libraries check</string>
-    <string name="preference_experimental_title">Experimental Stuff</string>
-    <string name="preference_experimental_description">Use things there with consideration, no support</string>
+    <string name="preference_java_description">Java Runtimes, JVM Arguments, RAM Amount &amp; Sandbox</string>
+    <string name="preference_misc_title">Miscellaneous Settings</string>
+    <string name="preference_misc_description">Version list &amp; Libraries check</string>
+    <string name="preference_experimental_title">Experimental Settings</string>
+    <string name="preference_experimental_description">Please adjust these settings cautiously, No support is provided.</string>
     <string name="preference_sustained_performance_title">Enable sustained performance mode</string>
     <string name="preference_sustained_performance_description">Limit thermal throttling by limiting peak performance.</string>
     <string name="preference_force_vsync_title">Force enable VSync</string>
     <string name="preference_force_vsync_description">Limit thermal throttling by limiting peak performance.</string>
     <string name="preference_force_english_title">Force language to English</string>
     <string name="preference_force_english_description">Allows you to see original strings, as intended by developers. Requires a restart.</string>
-    <string name="preference_edit_controls_title">Edit custom controls</string>
+    <string name="preference_edit_controls_title">Customize Controls</string>
     <string name="preference_edit_controls_summary">Tweak the control scheme to fit your needs.</string>
 
-    <string name="preference_category_gyro_controls">Gyroscope controls</string>
-    <string name="preference_category_virtual_mouse">Virtual mouse</string>
+    <string name="preference_category_gyro_controls">GYROSCOPR CONTROLS</string>
+    <string name="preference_category_virtual_mouse">CURSOR</string>
 
     <string name="preference_gyro_invert_x_axis">Invert X axis</string>
     <string name="preference_gyro_invert_y_axis">Invert Y axis</string>
@@ -265,7 +265,7 @@
     <string name="preference_gyro_sample_rate_title">Gyroscope sampling rate</string>
     <string name="preference_gyro_sample_rate_description">If you have performance issues with gyroscope controls, increase this.</string>
     <string name="microsoft_login_retry_later">Too many requests, please try again later.</string>
-    <string name="storage_required">PojavLauncher requires external storage to be attached. Please reconnect it and restart the app.</string>
+    <string name="storage_required">Pojav-Vortex requires external storage to be attached. Please reconnect it and restart the app.</string>
     <string name="mcl_setting_title_buttonallcaps">Only use capital letters in button labels</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Disable this if you want to use lowercase letters in your controls.</string>
     <string name="create_profile">Create new profile</string>
@@ -353,18 +353,18 @@
     <string name="preference_verify_manifest_description">When enabled, the launcher will check the game version manifest along with the libraries.</string>
     <string name="notif_download_finished">The game is ready to launch</string>
     <string name="notif_download_finished_desc">Click here to start it!</string>
-    <string name="preference_category_gestures">Gestures</string>
-    <string name="preference_category_buttons">Buttons</string>
-    <string name="preference_category_experimental_settings">Experimental fuckury</string>
-    <string name="preference_category_java_tweaks">Java Tweaks</string>
-    <string name="preference_category_main_categories">Categories</string>
-    <string name="preference_category_miscellaneous">Miscellaneous settings</string>
-    <string name="preference_category_video">Video settings</string>
+    <string name="preference_category_gestures">GESTURES</string>
+    <string name="preference_category_buttons">BUTTONS</string>
+    <string name="preference_category_experimental_settings">EXPERIMENTAL SETTINGS</string>
+    <string name="preference_category_java_tweaks">JAVA TWEAKS</string>
+    <string name="preference_category_main_categories">CATEGORIES</string>
+    <string name="preference_category_miscellaneous">MISCELLANEOUS SETTINGS</string>
+    <string name="preference_category_video">VIDEO &amp; RENDERER</string>
     <string name="notification_permission_dialog_title">Permission request</string>
-    <string name="notification_permission_dialog_text">PojavLauncher requires a permission to post notifications to prevent game/modpack downloads from stopping when you leave the app. Without this permission, Android may shut down your downloads when you put PojavLauncher in background mode.</string>
+    <string name="notification_permission_dialog_text">Pojav-Vortex requires a permission to post notifications to prevent game/modpack downloads from stopping when you leave the app. Without this permission, Android may shut down your downloads when you put PojavLauncher in background mode.</string>
     <string name="notification_permission_toast">You can always change your mind later by going into Settings</string>
-    <string name="preference_ask_for_notification_title">Allow notifications</string>
-    <string name="preference_ask_for_notification_description">Click to re-request the notification permission, required for game/modpack background downloads to work properly.</string>
+    <string name="preference_ask_for_notification_title">Allow Notifications</string>
+    <string name="preference_ask_for_notification_description">Click to request the notification permission, Required for game/modpack background downloads to work properly.</string>
     <string name="preference_vsync_in_zink_title">Allow V-Sync with Zink</string>
     <string name="preference_vsync_in_zink_description">Allows the launcher to use internal system APIs to enable V-Sync for Zink. Turn this off if your launcher suddenly crashes with Zink after a system update.</string>
     <string name="exception_failed_to_unpack_jre17">Failed to install JRE 17</string>
@@ -381,4 +381,8 @@
     <string name="log_view_button_output_off">Output\nOFF</string>
     <string name="log_view_button_output_on">Output\nON</string>
     <string name="log_view_label_log_output">Log output:</string>
+
+    <!-- App Start Toast -->
+    <string name="app_start_toast">"Welcome to Pojav-Vortex"</string>
+
 </resources>

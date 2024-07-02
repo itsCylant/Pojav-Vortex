@@ -16,12 +16,12 @@
 
 package com.ipaulpro.afilechooser;
 
+import net.kdt.pojavlaunch.R;
 import android.content.*;
 import android.view.*;
 import android.widget.*;
 import java.io.*;
 import java.util.*;
-import net.kdt.pojavlaunch.*;
 
 /**
  * List adapter for Files.
