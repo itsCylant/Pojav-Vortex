@@ -22,6 +22,14 @@
 			android:orientation="vertical">
 
 			<com.kdt.mcgui.LauncherMenuButton
+				android:id="@+id/cylant_socials"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/_66sdp"
+				android:background="?android:attr/selectableItemBackground"
+				android:drawableStart="@drawable/ic_social"
+				android:text="@string/mcl_cylant_socials" />
+
+			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/news_button"
 				android:layout_width="match_parent"
 				android:layout_height="@dimen/_66sdp"

@@ -58,8 +58,4 @@
         android:key="notification_permission_request"
         />
 
-
-
-
-
 </PreferenceScreen>

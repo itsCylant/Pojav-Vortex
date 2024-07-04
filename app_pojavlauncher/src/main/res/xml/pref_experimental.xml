@@ -16,4 +16,5 @@
             android:summary="@string/preference_force_big_core_desc" />
 
     </PreferenceCategory>
+
 </PreferenceScreen>

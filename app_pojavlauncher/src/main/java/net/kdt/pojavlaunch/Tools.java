@@ -93,11 +93,12 @@ import java.util.Map;
 public final class Tools {
     public  static final float BYTE_TO_MB = 1024 * 1024;
     public static final Handler MAIN_HANDLER = new Handler(Looper.getMainLooper());
-    public static String APP_NAME = "PojavLauncher";
+    public static String APP_NAME = "Pojav-Vortex";
 
     public static final Gson GLOBAL_GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    public static final String URL_HOME = "https://pojavlauncherteam.github.io";
+    public static final String URL_HOME = "https://github.com/itsCylant/Pojav-Vortex";
+    public static final String URL_SOCIALS = "https://youtube.com/@cylant";
     public static String NATIVE_LIB_DIR;
     public static String DIR_DATA; //Initialized later to get context
     public static File DIR_CACHE;

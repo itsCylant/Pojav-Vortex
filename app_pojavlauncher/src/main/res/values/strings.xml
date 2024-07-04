@@ -36,7 +36,7 @@
 
     <!-- MCLauncherActivity: Tabs -->
     <string name="mcl_tab_wiki">Wiki</string>
-
+    <string name="mcl_cylant_socials">Cylant</string>
     <!-- MCLauncherActivity: Account status -->
 
     <!-- MCLauncherActivity: Strings -->
@@ -197,11 +197,11 @@
     <string name="preference_control_title">Control Customization</string>
     <string name="preference_control_description">Gestures, Buttons &amp; Scaling</string>
     <string name="preference_java_title">Java Tweaks</string>
-    <string name="preference_java_description">Java Runtimes, JVM Arguments, RAM Amount &amp; Sandbox</string>
+    <string name="preference_java_description">Java Runtimes, JVM Arguments, RAM Allocation &amp; Sandbox</string>
     <string name="preference_misc_title">Miscellaneous Settings</string>
-    <string name="preference_misc_description">Version list &amp; Libraries check</string>
+    <string name="preference_misc_description">Version List, Libraries Check &amp; Cursor Customization</string>
     <string name="preference_experimental_title">Experimental Settings</string>
-    <string name="preference_experimental_description">Please adjust these settings cautiously, No support is provided.</string>
+    <string name="preference_experimental_description">Please adjust these settings cautiously. At Your Own Risk, No Support Provided</string>
     <string name="preference_sustained_performance_title">Enable sustained performance mode</string>
     <string name="preference_sustained_performance_description">Limit thermal throttling by limiting peak performance.</string>
     <string name="preference_force_vsync_title">Force enable VSync</string>
@@ -210,9 +210,13 @@
     <string name="preference_force_english_description">Allows you to see original strings, as intended by developers. Requires a restart.</string>
     <string name="preference_edit_controls_title">Customize Controls</string>
     <string name="preference_edit_controls_summary">Tweak the control scheme to fit your needs.</string>
+    <string name="preference_mouse_title">Cursor Customization</string>
+    <string name="preference_mouse_description">Customize the cursor appearance.</string>
+    <string name="preference_mouse_title1">Reset The Cursor Appearance</string>
 
-    <string name="preference_category_gyro_controls">GYROSCOPR CONTROLS</string>
+    <string name="preference_category_gyro_controls">GYROSCOPE CONTROLS</string>
     <string name="preference_category_virtual_mouse">CURSOR</string>
+    <string name="preference_category_custom_cursor">CUSTOMIZE CURSOR</string>
 
     <string name="preference_gyro_invert_x_axis">Invert X axis</string>
     <string name="preference_gyro_invert_y_axis">Invert Y axis</string>
@@ -280,7 +284,7 @@
     <string name="global_no">No</string>
 
     <string name="preference_controller_map_wiped">The controller config has been wiped.</string>
-    <string name="preference_category_controller_settings">Controller settings</string>
+    <string name="preference_category_controller_settings">CONTROLLER SETTINGS</string>
     <string name="preference_wipe_controller_title">Reset controller mapping</string>
     <string name="preference_wipe_controller_description">Allows you to remap the controller buttons.</string>
     <string name="preference_deadzone_scale_title">Joystick deadzone scale</string>
@@ -355,6 +359,7 @@
     <string name="notif_download_finished_desc">Click here to start it!</string>
     <string name="preference_category_gestures">GESTURES</string>
     <string name="preference_category_buttons">BUTTONS</string>
+    <string name="preference_category_control_customization">CONTROL CUSTOMIZATION</string>
     <string name="preference_category_experimental_settings">EXPERIMENTAL SETTINGS</string>
     <string name="preference_category_java_tweaks">JAVA TWEAKS</string>
     <string name="preference_category_main_categories">CATEGORIES</string>
@@ -382,7 +387,9 @@
     <string name="log_view_button_output_on">Output\nON</string>
     <string name="log_view_label_log_output">Log output:</string>
 
-    <!-- App Start Toast -->
+    <!-- App Toast -->
     <string name="app_start_toast">"Welcome to Pojav-Vortex"</string>
+    <string name="notif_cursorset">Custom Cursor Set done.</string>
+    <string name="notif_cursoreset">Custom Cursor Reset done</string>
 
 </resources>

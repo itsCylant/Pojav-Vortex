@@ -54,4 +54,5 @@
             android:title="@string/preference_vsync_in_zink_title"
             />
     </PreferenceCategory>
+
 </PreferenceScreen>
