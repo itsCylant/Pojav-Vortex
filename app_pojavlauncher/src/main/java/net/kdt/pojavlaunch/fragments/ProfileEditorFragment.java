@@ -22,6 +22,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.movtery.ui.subassembly.customprofilepath.ProfilePathManager;
+
 import net.kdt.pojavlaunch.R;
 import net.kdt.pojavlaunch.Tools;
 import net.kdt.pojavlaunch.extra.ExtraConstants;
@@ -100,7 +102,7 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
             if(LauncherProfiles.mainProfileJson.profiles.size() > 1){
                 ProfileIconCache.dropIcon(mProfileKey);
                 LauncherProfiles.mainProfileJson.profiles.remove(mProfileKey);
-                LauncherProfiles.write();
+                LauncherProfiles.write(ProfilePathManager.getCurrentProfile());
                 ExtraCore.setValue(ExtraConstants.REFRESH_VERSION_SPINNER, DELETED_PROFILE);
             }
 
@@ -110,7 +112,7 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
         mGameDirButton.setOnClickListener(v -> {
             Bundle bundle = new Bundle(2);
             bundle.putBoolean(FileSelectorFragment.BUNDLE_SELECT_FOLDER, true);
-            bundle.putString(FileSelectorFragment.BUNDLE_ROOT_PATH, Tools.DIR_GAME_HOME);
+            bundle.putString(FileSelectorFragment.BUNDLE_ROOT_PATH, ProfilePathManager.getCurrentPath());
             bundle.putBoolean(FileSelectorFragment.BUNDLE_SHOW_FILE, false);
             mValueToConsume = FileSelectorFragment.BUNDLE_SELECT_FOLDER;
 
@@ -123,6 +125,7 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
             bundle.putBoolean(FileSelectorFragment.BUNDLE_SELECT_FOLDER, false);
             bundle.putString(FileSelectorFragment.BUNDLE_ROOT_PATH, Tools.CTRLMAP_PATH);
             mValueToConsume = FileSelectorFragment.BUNDLE_SELECT_FILE;
+            mValueToConsume = "select_file";
 
             Tools.swapFragment(requireActivity(),
                     FileSelectorFragment.class, FileSelectorFragment.TAG, bundle);
@@ -230,7 +233,7 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
 
 
         LauncherProfiles.mainProfileJson.profiles.put(mProfileKey, mTempProfile);
-        LauncherProfiles.write();
+        LauncherProfiles.write(ProfilePathManager.getCurrentProfile());
         ExtraCore.setValue(ExtraConstants.REFRESH_VERSION_SPINNER, mProfileKey);
     }
 

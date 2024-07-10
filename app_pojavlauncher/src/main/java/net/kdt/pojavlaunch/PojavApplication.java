@@ -10,6 +10,10 @@ import android.os.*;
 import androidx.core.app.*;
 
 import android.util.*;
+
+import com.movtery.feature.ResourceManager;
+import com.movtery.utils.UnpackJRE;
+
 import java.io.*;
 import java.text.*;
 import java.util.*;
@@ -38,7 +42,7 @@ public class PojavApplication extends Application {
 				// Write to file, since some devices may not able to show error
 				FileUtils.ensureParentDirectory(crashFile);
 				PrintStream crashStream = new PrintStream(crashFile);
-				crashStream.append("PojavLauncher crash report\n");
+				crashStream.append("Pojav-Vortex crash report\n");
 				crashStream.append(" - Time: ").append(DateFormat.getDateTimeInstance().format(new Date())).append("\n");
 				crashStream.append(" - Device: ").append(Build.PRODUCT).append(" ").append(Build.MODEL).append("\n");
 				crashStream.append(" - Android version: ").append(Build.VERSION.RELEASE).append("\n");
@@ -57,7 +61,8 @@ public class PojavApplication extends Application {
 		
 		try {
 			super.onCreate();
-			
+			Tools.APP_NAME = getResources().getString(R.string.app_short_name);
+
 			Tools.DIR_DATA = getDir("files", MODE_PRIVATE).getParent();
 			Tools.DIR_CACHE = getCacheDir();
 			Tools.DIR_ACCOUNT_NEW = Tools.DIR_DATA + "/accounts";
@@ -70,12 +75,16 @@ public class PojavApplication extends Application {
 												.concat("/x86");
 			}
 			AsyncAssetManager.unpackRuntime(getAssets());
+			AsyncAssetManager.unpackRuntime11(getAssets());
+			UnpackJRE.unpackAllJre(getAssets());
 		} catch (Throwable throwable) {
 			Intent ferrorIntent = new Intent(this, FatalErrorActivity.class);
 			ferrorIntent.putExtra("throwable", throwable);
 			ferrorIntent.setFlags(FLAG_ACTIVITY_NEW_TASK);
 			startActivity(ferrorIntent);
 		}
+
+		ResourceManager.setResources(this);
 	}
 
 	@Override

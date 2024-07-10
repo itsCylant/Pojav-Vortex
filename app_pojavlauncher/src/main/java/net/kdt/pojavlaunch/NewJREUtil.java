@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.content.res.AssetManager;
 import android.util.Log;
 
+import com.movtery.ui.subassembly.customprofilepath.ProfilePathManager;
+
 import net.kdt.pojavlaunch.multirt.MultiRTUtils;
 import net.kdt.pojavlaunch.multirt.Runtime;
 import net.kdt.pojavlaunch.utils.MathUtils;
@@ -67,7 +69,7 @@ public class NewJREUtil {
         if (versionInfo.javaVersion == null || versionInfo.javaVersion.component.equalsIgnoreCase("jre-legacy"))
             return true;
 
-        LauncherProfiles.load();
+        LauncherProfiles.load(ProfilePathManager.getCurrentProfile());
         MinecraftProfile minecraftProfile = LauncherProfiles.getCurrentProfile();
         String selectedRuntime = Tools.getSelectedRuntime(minecraftProfile);
         Runtime runtime = MultiRTUtils.read(selectedRuntime);
@@ -91,7 +93,7 @@ public class NewJREUtil {
         }
 
         minecraftProfile.javaDir = Tools.LAUNCHERPROFILES_RTPREFIX + appropriateRuntime;
-        LauncherProfiles.write();
+        LauncherProfiles.write(ProfilePathManager.getCurrentProfile());
         return true;
     }
 
